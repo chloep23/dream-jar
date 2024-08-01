@@ -5,26 +5,58 @@ import './globals.css';
 export default function Home() {
   return (
     <main>
-        <div className="bg-beigeWhite">
+        <div className="bg-beigeWhite h-screen">
             <div className = "flex flex-col h-80 w-full">
-                <div className = "grid grid-cols-2 h-80"> 
+                <div className = "grid grid-cols-2"> 
                     <div className="flex flex-col bg-beigeWhite">
-                        <h1 className="text-black text-center text-lg mx-auto font-bold mt-8 mb-4">Welcome Rachel</h1>
-                        <div className = "relative justify-content-center align-items-center">
-                            <img src="/assets/purple_bg.png" alt="Profile Pic" className = "absolute mx-auto h-44 w-44 "></img>
-                            <img src="/assets/profile_pic.png" alt="Profile Pic" className = "absolute mx-auto h-44 w-44 "></img>
+                        <h1 className="text-black text-center text-4xl font-bold mx-auto mt-8 mb-4">Welcome Rachel!</h1>
+                        <div className = "relative box-content shadow-xl shadow-gray-900 bg-purple_bg.png rounded-2xl mx-auto left-0 right-0 h-96 w-1/2 ">
+                            <img src="/assets/purple_bg.png" alt="Profile Pic" className = "absolute mx-auto mt-16 h-3/4 w-full "></img>
+                            <img src="/assets/profile_pic.jpg" alt="Profile Pic" className = "absolute mx-auto mt-16 left-0 right-0 rounded-full h-72 w-72"></img>
                         </div>
-                        <h2 className="text-black text-center text-lg mx-auto mt-4">$4,456.00 Savings</h2>
+                        <h2 className="text-black text-center text-2xl font-bold mx-auto mt-4">$4,456.00 Savings</h2>
                     </div>
 
                     <div className="flex flex-col bg-beigeWhite">
                         <h1 className="text-black text-center text-lg mx-auto mt-8">Make Dreams Happen</h1>
                         <h2 className="text-gray text-center text-lg mx-auto">One Jar at a Time</h2>
-                        
+                        <div className = "grid grid-cols-2 h-80 mx-auto left-0 right-0 gap-10">
+                            <div className ="flex">
+                                <div className = "box-content shadow-xl shadow-gray-700 rounded-2xl bg-light-blue size-52 p-5">
+                                    <h3 className = "text-blue text-left">Goals</h3>
+                                    <h4 className = "text-black text-left mt-36">Dream Jars</h4>
+                                    <h5 className = "text-black text-left">Fill Jar, Fulfill Dreams</h5>
+                                </div>
+                            </div>
+                            <div className ="flex">
+                                <div className = "box-content shadow-xl shadow-gray-700 rounded-2xl bg-light-yellow size-52 p-5">
+                                    <h3 className = "text-yellow text-left">Friends</h3>
+                                    <h4 className = "text-black text-left mt-36">Dreamers</h4>
+                                    <h5 className = "text-black text-left">Shine Together</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div className = "grid grid-cols-2 h-80 mx-auto left-0 right-0 gap-10">
+                            <div className ="flex">
+                                <div className = "box-content shadow-xl shadow-gray-700 rounded-2xl bg-light-orange size-52 p-5">
+                                    <h3 className = "text-orange text-left">History</h3>
+                                    <h4 className = "text-black text-left mt-36">Transactionss</h4>
+                                    <h5 className = "text-black text-left">Each Count Counts</h5>
+                                </div>
+                            </div>
+                            <div className ="flex">
+                                <div className = "box-content shadow-xl shadow-gray-700 rounded-2xl bg-light-pink size-52 p-5">
+                                    <h3 className = "text-pink text-left">Progress</h3>
+                                    <h4 className = "text-black text-left mt-36">Milestones</h4>
+                                    <h5 className = "text-black text-left">Collection of Jars</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-        </div>
+      
     </main>
   );
 }

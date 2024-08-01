@@ -30,7 +30,7 @@ module.exports = {
     },
 
     fontFamily:{
-      'lato-bold': ['lato-bold'],
+     Lato: ['lato'],
     },
   },
   plugins: [],
