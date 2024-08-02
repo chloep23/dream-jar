@@ -31,6 +31,18 @@ export default function Dreamers() {
         time: "Time Record",
         jar: "Jar Type",
         amount: "Input"
+    },
+    {
+        img: "/assets/profile_pic.jpg",
+        time: "Time Record",
+        jar: "Jar Type",
+        amount: "Input"
+    },
+    {
+        img: "/assets/profile_pic.jpg",
+        time: "Time Record",
+        jar: "Jar Type",
+        amount: "Input"
     }
    ];
 
@@ -40,7 +52,7 @@ export default function Dreamers() {
             <div className = "flex flex-col h-screen w-screen lg:w-3/4 mx-auto left-0 right-0 items-center">
                 <div className = "flex flex-col w-5/6 2xl:w-1/2 mt-16 mx-auto left-0 right-0 items-center">
                     <h1 className="text-black text-center text-3xl md:text-4xl font-bold mx-auto md:mb-4 mt-6">Dream Deposits</h1>
-                    <h2 className="text-gray text-center text-2xl font-bold mb-8">Counting your Zzz's</h2>
+                    <h2 className="text-gray text-center text-xl font-bold mb-8">Counting your Zzz's</h2>
                 </div>
 
             {/*---------FRIENDS LIST----------*/}

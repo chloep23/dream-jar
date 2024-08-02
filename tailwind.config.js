@@ -14,6 +14,14 @@ module.exports = {
              "url('/assets/new_york.jpg')",
         gradBG: 
              "url('/assets/grad_party.jpg')",
+        dorm_bed:
+              "url('/assets/dorm_bed.webp')",
+        dorm_desk:
+              "url('/assets/dorm_desk.jpg')",
+        dorm_lights:
+              "url('/assets/dorm_lights.jpg')",
+        dorm_cart:
+              "url('/assets/dorm_cart.jpg')",
       },
     },
     colors:{

@@ -68,12 +68,12 @@ export default function Dreamers() {
         <div className="bg-beigeWhite h-screen">
             {/*---------HEADER----------*/}
             <div className = "flex flex-col h-screen w-screen lg:w-3/4 mx-auto left-0 right-0 items-center">
-                <div className = "flex justify-between w-5/6 2xl:w-1/2 mt-16">
+                <div className = "flex justify-between w-screen 2xl:w-1/2 mt-16">
                     <div className = "text-left">
-                        <h1 className="text-black text-2xl md:text-4xl font-bold mt-1">Your Dreamers</h1>
-                        <h1 className="text-gray text-xl md:text-3xl font-bold mt-2">30 Dreamates</h1>
+                        <h1 className="text-black text-2xl md:text-4xl font-bold ml-4 mt-1">Your Dreamers</h1>
+                        <h1 className="text-gray text-xl md:text-3xl font-bold ml-4 mt-2">30 Dreamates</h1>
                     </div>
-                    <img src="/assets/profile_pic.jpg" alt="Profile Pic" className = "rounded-full h-20 w-20 lg:h-28 lg:w-28"></img>
+                    <img src="/assets/profile_pic.jpg" alt="Profile Pic" className = "rounded-full h-20 w-20 lg:h-28 lg:w-28 mr-4"></img>
                 </div>
 
             {/*---------IMAGE CAROUSEL----------*/}
@@ -101,7 +101,7 @@ export default function Dreamers() {
                 <h1 className="text-gray text-xl font-bold mt-2">Fellow Dreamers</h1>
                 {data.map((d) => (
                     <div className = "flex justify-between items-center w-full mx-auto left-0 right-0 mt-5 md:p-8">
-                        <img src={d.img} alt="Profile Pic" className="rounded-full h-14 w-14 md:h-20 md:w-20"></img>
+                        <img src={d.img} alt="Profile Pic" className="rounded-full h-14 w-14 md:h-20 md:w-20 "></img>
                         <div className = "w-20 md:w-40 md:mr-10 text-left">
                             <h1 className="text-black text-base text-center md:text-xl font-bold mt-1">{d.name}</h1>
                             <h1 className="text-gray text-base md:text-lg text-center font-semibold mt-2">{d.id}</h1>
@@ -114,8 +114,8 @@ export default function Dreamers() {
             </div>
             {/*---------FOOTNOTE ----------*/}
             <div className="flex flex-col items-center mx-auto left-0 right-0 mt-5 p-5">
-            <h3 className = "text-gray text-center text-lg font-bold">All Rights Reserved @CapitalOneBHTS</h3>
-        </div>
+                <h3 className = "text-gray text-center text-lg font-bold">All Rights Reserved @CapitalOneBHTS</h3>
+            </div>
         </div>
     </div>
     )
