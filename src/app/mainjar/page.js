@@ -40,9 +40,7 @@ export default function MainJar() {
                             <h5 className = "text-white text-left font-semibold mt-1">$25.56</h5>
                         </div>
                     </div>
-
                     
-
                 </div>
 
             </div>

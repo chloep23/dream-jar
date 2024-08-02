@@ -1,8 +1,11 @@
 "use client";
 import {useState} from 'react';
 import {useRouter} from "next/navigation";
+import Modal from '../../components/Modal';
+
 
 export default function DreamJars() {
+    const [openModal, setOpenModal] = useState(false)
 
     const router = useRouter();
 
@@ -32,8 +35,6 @@ export default function DreamJars() {
     }
 
     return(
-
-        
         <div className="bg-beigeWhite h-screen">
             <div className = "flex flex-col w-3/4 mt-16 mx-auto left-0 right-0 items-center">
                 <h1 className="text-black text-center text-3xl md:text-4xl font-bold mx-auto md:mb-4 mt-6">Make a Jar</h1>
@@ -41,9 +42,9 @@ export default function DreamJars() {
             </div>
             {/*----------COVER IMAGE------------*/}
             <div className = "flex flex-col w-3/4 mt-10 mx-auto left-0 right-0 items-center">
-                <div className="flex rounded-lg h-40 w-40 border-2 border-dashed border-black justify-center item-center">
+                <button onClick={() => {setOpenModal(true)}} className="flex rounded-lg h-40 w-40 border-2 border-dashed border-black justify-center item-center">
                     <img src="/assets/add_pic.png" className="w-20 h-20 m-auto"></img>
-                </div>
+                </button>
                 <h1 className="text-black text-center text-lg mx-auto mt-2">Add Cover</h1>
 
              {/*----------JAR TITLE------------*/}
@@ -111,6 +112,7 @@ export default function DreamJars() {
             <div className="flex flex-col items-center mx-auto left-0 right-0 mt-5 p-5">
                 <h3 className = "text-gray text-center text-lg font-bold">All Rights Reserved @CapitalOneBHTS</h3>
             </div>
+            {openModal && <Modal closeModal={setOpenModal} />}
         </div>
    
     )

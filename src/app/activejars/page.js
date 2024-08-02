@@ -1,7 +1,6 @@
 "use client";
 import Link from 'next/link';
-import {data} from '../../data/data'
-
+import {data} from '../../data/jardata'
 
 export default function ActiveJars() {
     return(
@@ -9,7 +8,7 @@ export default function ActiveJars() {
             {/*----------HEADER------------*/}
             <div className = "flex flex-col w-screen md:w-3/4 mt-14 mx-auto left-0 right-0 items-center">
                 <h1 className="text-black text-center text-3xl md:text-4xl font-bold mx-auto md:mb-4 ">Active Jars</h1>
-                <h2 className="text-gray text-center text-xl font-bold mb-8 tracking-normal">Grab Jar. Get Dreamer. <br/> Go Begin.</h2>
+                <h2 className="text-gray text-center text-xl font-bold mb-8 tracking-[.15em]">Grab Jar. Get Dreamer. Go Begin.</h2>
             </div>
 
             {/*----------JARS DASHBOARD------------*/}

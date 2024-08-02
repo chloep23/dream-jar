@@ -11,7 +11,7 @@ export default function NavBar() {
           <button className = "mt-1 lg:hidden" onClick={()=>{setIsOpen((!isOpen))}}>
             <img src="/assets/dropdown.png" alt="dropdown" className ="h-8 w-8 m-auto"></img>
           </button>
-          <div className="hidden lg:flex mt-7 justify-between lg:w-2/3 xl:w-1/2 2xl:w-1/3">
+          <div className="hidden lg:flex mt-7 justify-between lg:w-2/3 xl:w-3/4 2xl:w-1/3">
             <Link href='/' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Home</Link>
             <Link href='/activejars' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Dream Jars</Link>
             <Link href='/dreamers' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Dreamers</Link>
@@ -24,9 +24,9 @@ export default function NavBar() {
           isOpen && (<div className="lg:hidden flex flex-col sticky bg-purple h-auto w-screen">
             <Link href='/' className="text-white font-bold items-left mt-4">Home</Link>
             <Link href='/activejars' className="text-white font-bold items-left mt-4">Dream Jars</Link>
-            <Link href='/' className="text-white font-bold items-left mt-4">Dreamers</Link>
-            <Link href='/' className="text-white font-bold items-left mt-4">Transactions</Link>
-            <Link href='/' className="text-white font-bold items-left mt-4 mb-4 ">Milestones</Link>
+            <Link href='/dreamers' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Dreamers</Link>
+            <Link href='/transactions' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Transactions</Link>
+            <Link href='/milestones' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Milestones</Link>
           </div>)
         }
       </nav>

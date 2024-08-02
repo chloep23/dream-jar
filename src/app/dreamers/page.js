@@ -3,53 +3,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/new-slick.css";
-
-
+import {data} from '../../data/dreamdata'
 
 export default function Dreamers() {
-   const data = [
-    {
-        name: "Jamie Chung",
-        img: "/assets/dreamer1.jpg",
-        id: "jchung24"
-    },
-    {
-        name: "Zendaya",
-        img: "/assets/dreamer2.jpg",
-        id: "zstar15"
-    },
-    {
-        name: "Full Name",
-        img: "/assets/dreamer1.jpg",
-        id: "Username"
-    },
-    {
-        name: "Full Name",
-        img: "/assets/dreamer2.jpg",
-        id: "Username" 
-    },
-    {
-        name: "Full Name",
-        img: "/assets/dreamer1.jpg",
-        id: "Username"
-    },
-    {
-        name: "Full Name",
-        img: "/assets/dreamer2.jpg",
-        id: "Username"
-    },
-    {
-        name: "Full Name",
-        img: "/assets/dreamer1.jpg",
-        id: "Username"
-    },
-    {
-        name: "Full Name",
-        img: "/assets/dreamer2.jpg",
-        id: "Username"
-    },
-   ];
-
    const settings = {
         dots: true,
         infinite: true,

@@ -1,4 +1,3 @@
-
 export const data = [
     {
         name: "College Decor",
