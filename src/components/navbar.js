@@ -14,9 +14,9 @@ export default function NavBar() {
           <div className="hidden lg:flex mt-7 justify-between lg:w-2/3 xl:w-1/2 2xl:w-1/3">
             <Link href='/' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Home</Link>
             <Link href='/activejars' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Dream Jars</Link>
-            <Link href='/' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Dreamers</Link>
-            <Link href='/' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Transactions</Link>
-            <Link href='/' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Milestones</Link>
+            <Link href='/dreamers' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Dreamers</Link>
+            <Link href='/transactions' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Transactions</Link>
+            <Link href='/milestones' className="text-white text-lg font-bold items-left mt-3 md:mt-0">Milestones</Link>
           </div>
           <img src="/assets/profile_pic.jpg" alt="Profile Pic" className = "rounded-full h-12 w-12 mt-4"></img>
         </div>

@@ -8,9 +8,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        collegeBG:
+             "url('/assets/college_dorm.jpg')",
+        nycBG: 
+             "url('/assets/new_york.jpg')",
+        gradBG: 
+             "url('/assets/grad_party.jpg')",
       },
     },
     colors:{
@@ -18,6 +21,7 @@ module.exports = {
       'beigeWhite': '#F7F7F7', 
       'black': '#000000',
       'gray': '#797575',
+      'light-gray': '#EAEAEA',
       'purple': '#7856FF',
       'light-blue':'#DAF5F2',
       'light-yellow':'#FCF9E2',
