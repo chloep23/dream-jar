@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/new-slick.css";
 
+
+
 export default function Dreamers() {
    const data = [
     {
